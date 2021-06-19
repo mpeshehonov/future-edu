@@ -5,18 +5,21 @@ import {Row, Col, Typography} from 'antd';
 const {Title} = Typography;
 
 const CoursePage = () => {
-  const params = useRouteMatch<any>('/courses/:id');
+    const params = useRouteMatch<any>('/courses/:id');
 
-  return (
-    <>
-      <Title>Курс по пожарной безопасности</Title>
-      <Row justify="center">
-        <Col span={12}>
-          <Link to={`/courses/${params?.params.id}/quiz`}>Квиз</Link>
-        </Col>
-      </Row>
-    </>
-  );
+    return (
+        <>
+            <Title>Курс по пожарной безопасности</Title>
+            <Row justify="center">
+                <Col span={4}>
+                    <Link to={`/courses/${params?.params.id}/quiz`}>Квиз</Link>
+                </Col>
+                <Col span={4}>
+                    <Link to={`/courses/${params?.params.id}/dnd`}>ДНД</Link>
+                </Col>
+            </Row>
+        </>
+    );
 };
 
 export default CoursePage;

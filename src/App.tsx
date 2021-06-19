@@ -11,6 +11,7 @@ import CoursePage from './pages/CoursePage';
 import QuizPage from './pages/QuizPage';
 import ChatPage from './pages/ChatPage';
 import DndPage from "./pages/DndPage";
+import FirePuzzlePage from "./pages/FirePuzzlePage";
 
 const App = () => {
   return (
@@ -24,6 +25,7 @@ const App = () => {
           <Route exact path="/courses/dnd" component={DndPage} />
           <Route exact path="/courses/:id" component={CoursePage} />
           <Route exact path="/courses/:id/quiz" component={QuizPage} />
+          <Route exact path="/courses/:id/dnd" component={FirePuzzlePage} />
           <Route exact path="/chat" component={ChatPage} />
         </Switch>
       </PageLayout>
