@@ -13,8 +13,8 @@ import QuizPage from './pages/QuizPage';
 import ComicsPage from './pages/ComicsPage';
 import TrainerPage from './pages/TrainerPage';
 import ChatPage from './pages/ChatPage';
-import DndPage from "./pages/DndPage";
-import FirePuzzlePage from "./pages/FirePuzzlePage";
+import DndPage from './pages/DndPage';
+import FirePuzzlePage from './pages/FirePuzzlePage';
 
 const App = () => {
   return (

@@ -12,6 +12,7 @@ import {
 } from 'antd';
 import axios from './../../shared/client';
 import {UserOutlined} from '@ant-design/icons';
+import './styles.scss';
 
 const {Title} = Typography;
 const {TextArea} = Input;
@@ -31,9 +32,10 @@ interface Message {
 
 const CommentList = ({comments: messages}) => (
   <List
+    className="chat__history"
     dataSource={messages}
     header={`${messages.length} ${
-      messages.length > 1 ? 'Сообщений' : 'Сообщение'
+      messages.length > 1 ? 'сообщений' : 'сообщение'
     }`}
     itemLayout="horizontal"
     renderItem={(message: Message) => (
@@ -127,6 +129,7 @@ const ChatPage = () => {
           {messages.length > 0 && <CommentList comments={messages} />}
           <Comment
             avatar={<Avatar shape="circle" icon={<UserOutlined />} />}
+            author="Вадим"
             content={
               <Editor
                 onChange={handleChangeMessage}
