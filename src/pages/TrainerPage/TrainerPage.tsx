@@ -10,7 +10,7 @@ const TrainerPage = () => {
     <>
       <Title>Тренажер</Title>
       <Iframe
-        url="http://194.169.160.247/"
+        url="https://innohack.protsenko.dev"
         className="trainer"
         position="relative"
       />
