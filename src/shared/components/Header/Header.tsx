@@ -27,7 +27,7 @@ const Header = () => {
             offset={[-30, 25]}
             size="default"
           >
-            <Avatar shape="square" icon={<UserOutlined />} />
+            <Avatar shape="circle" icon={<UserOutlined />} />
           </Badge>
         </div>
       </Layout.Header>

@@ -1,21 +1,11 @@
-import React, {useEffect, useState} from 'react';
+import React from 'react';
 import {Link} from 'react-router-dom';
 import {Row, Col, Card, Progress, Typography} from 'antd';
 import './styles.scss';
-import axios from 'axios';
 
 const {Title} = Typography;
 
 const CoursesPage = () => {
-  const [courses, setCourses] = useState([]);
-  useEffect(() => {
-    axios
-      .get('http://194.169.160.247/api/rest/courseMaterial')
-      .then((r) => setCourses(r.data));
-  }, []);
-
-  console.log(courses);
-
   return (
     <>
       <Title>Курсы</Title>

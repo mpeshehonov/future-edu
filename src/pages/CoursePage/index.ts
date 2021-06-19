@@ -1,3 +1,1 @@
-
-export {default} from './CoursePage'
-  
+export {default} from './CoursePage';
