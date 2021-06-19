@@ -15,7 +15,7 @@ const CoursePage = () => {
                     <Link to={`/courses/${params?.params.id}/quiz`}>Квиз</Link>
                 </Col>
                 <Col span={4}>
-                    <Link to={`/courses/${params?.params.id}/dnd`}>ДНД</Link>
+                    <Link to={`/courses/${params?.params.id}/puzzle`}>Пазл</Link>
                 </Col>
             </Row>
         </>
