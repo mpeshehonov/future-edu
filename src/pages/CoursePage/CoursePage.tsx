@@ -12,7 +12,11 @@ const CoursePage = () => {
       <Title>Курс по пожарной безопасности</Title>
       <Row justify="center">
         <Col span={12}>
+          <Link to={`/courses/${params?.params.id}/info`}>Шпаргалка</Link>
+          <br />
           <Link to={`/courses/${params?.params.id}/quiz`}>Квиз</Link>
+          <br />
+          <Link to={`/courses/${params?.params.id}/comics`}>Комикс</Link>
           <br />
           <Link to={`/courses/${params?.params.id}/trainer`}>Тренажер</Link>
         </Col>
