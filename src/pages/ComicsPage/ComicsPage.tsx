@@ -4,7 +4,7 @@ import {Col, Row, Typography, Carousel} from 'antd';
 const {Title} = Typography;
 
 const contentStyle = {
-    height: '680px',
+    height: '550px',
     color: '#369',
     background: '#ccc'
 };
@@ -12,10 +12,10 @@ const contentStyle = {
 const ComicsPage = () => {
     return (
         <div className={'comics'}>
-            <Title>Комикс</Title>
+            <Title>Мораль: "подумай, прежде чем делать" :)</Title>
             <Row justify="center">
-                <Col span={6}>
-                    <Carousel autoplay>
+                <Col span={5}>
+                    <Carousel autoplay  dotPosition='bottom'>
                         <div>
                             <h3 style={contentStyle}><img src="/images/02/comics-01.jpg" alt="1" className={'comics-img'}/></h3>
                         </div>

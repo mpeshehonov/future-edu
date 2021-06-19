@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import './styles.scss';
+import {Button} from "antd";
 
 export interface Card {
     id?: number,
@@ -74,10 +75,10 @@ const FirePuzzlePage = () => {
                     </div>
                 )}
             </div>
-            <button className={'submit-button'} onClick={() => setDndResult(
+            <Button type={'primary'}  className={'submit-button'} onClick={() => setDndResult(
                 JSON.stringify(cardList.map(item => item.id)) === JSON.stringify(correctAnswer)
                     ? 'Ответ корректный'
-                    : 'Ответ некорректный')}>Проверить</button>
+                    : 'Ответ некорректный')}>Проверить</Button>
             <div className={JSON.stringify(cardList.map(item => item.id)) === JSON.stringify(correctAnswer) ? 'ok' : 'not-ok'}>
                 {dndResult}
             </div>
