@@ -10,6 +10,7 @@ import CoursesPage from './pages/CoursesPage';
 import CoursePage from './pages/CoursePage';
 import QuizPage from './pages/QuizPage';
 import ChatPage from './pages/ChatPage';
+import DndPage from "./pages/DndPage";
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
             <Redirect to="/courses" />
           </Route>
           <Route exact path="/courses" component={CoursesPage} />
+          <Route exact path="/courses/dnd" component={DndPage} />
           <Route exact path="/courses/:id" component={CoursePage} />
           <Route exact path="/courses/:id/quiz" component={QuizPage} />
           <Route exact path="/chat" component={ChatPage} />

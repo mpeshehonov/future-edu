@@ -20,10 +20,19 @@ const CoursesPage = () => {
     <>
       <Title>Курсы</Title>
       <Row justify="center">
-        <Col span={12}>
+        <Col span={4}>
           <Link to="/courses/1">
             <Card title="Пожарная безопасность" style={{width: 300}}>
               <Progress percent={100} size="small" status="normal" />
+              <Progress percent={80} size="small" status="success" />
+              <Progress percent={30} size="small" status="exception" />
+            </Card>
+          </Link>
+        </Col>
+        <Col span={4}>
+          <Link to="/courses/dnd">
+            <Card title="Техника безопасности" style={{width: 300}}>
+              <Progress percent={90} size="small" status="normal" />
               <Progress percent={80} size="small" status="success" />
               <Progress percent={30} size="small" status="exception" />
             </Card>
