@@ -14,6 +14,7 @@ import ComicsPage from './pages/ComicsPage';
 import TrainerPage from './pages/TrainerPage';
 import ChatPage from './pages/ChatPage';
 import DndPage from "./pages/DndPage";
+import FirePuzzlePage from "./pages/FirePuzzlePage";
 
 const App = () => {
   return (
@@ -28,6 +29,7 @@ const App = () => {
           <Route exact path="/courses/:id" component={CoursePage} />
           <Route exact path="/courses/:id/info" component={InfoPage} />
           <Route exact path="/courses/:id/quiz" component={QuizPage} />
+          <Route exact path="/courses/:id/dnd" component={FirePuzzlePage} />
           <Route exact path="/courses/:id/comics" component={ComicsPage} />
           <Route exact path="/courses/:id/trainer" component={TrainerPage} />
           <Route exact path="/chat" component={ChatPage} />
