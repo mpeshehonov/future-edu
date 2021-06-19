@@ -9,6 +9,7 @@ import PageLayout from './shared/components/PageLayout';
 import CoursesPage from './pages/CoursesPage';
 import CoursePage from './pages/CoursePage';
 import QuizPage from './pages/QuizPage';
+import TrainerPage from './pages/TrainerPage';
 import ChatPage from './pages/ChatPage';
 
 const App = () => {
@@ -22,6 +23,7 @@ const App = () => {
           <Route exact path="/courses" component={CoursesPage} />
           <Route exact path="/courses/:id" component={CoursePage} />
           <Route exact path="/courses/:id/quiz" component={QuizPage} />
+          <Route exact path="/courses/:id/trainer" component={TrainerPage} />
           <Route exact path="/chat" component={ChatPage} />
         </Switch>
       </PageLayout>
