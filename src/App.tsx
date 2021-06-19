@@ -1,18 +1,28 @@
 import React from 'react';
-import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Redirect,
+} from 'react-router-dom';
 import PageLayout from './shared/components/PageLayout';
 import CoursesPage from './pages/CoursesPage';
 import CoursePage from './pages/CoursePage';
 import QuizPage from './pages/QuizPage';
+import ChatPage from './pages/ChatPage';
 
 const App = () => {
   return (
     <Router>
       <PageLayout>
         <Switch>
-          <Route exact path="/" component={CoursesPage} />
-          <Route exact path="/:id" component={CoursePage} />
-          <Route exact path="/:id/quiz" component={QuizPage} />
+          <Route exact path="/">
+            <Redirect to="/courses" />
+          </Route>
+          <Route exact path="/courses" component={CoursesPage} />
+          <Route exact path="/courses/:id" component={CoursePage} />
+          <Route exact path="/courses/:id/quiz" component={QuizPage} />
+          <Route exact path="/chat" component={ChatPage} />
         </Switch>
       </PageLayout>
     </Router>

@@ -5,14 +5,14 @@ import {Row, Col, Typography} from 'antd';
 const {Title} = Typography;
 
 const CoursePage = () => {
-  const params = useRouteMatch<any>('/:id');
+  const params = useRouteMatch<any>('/courses/:id');
 
   return (
     <>
       <Title>Курс по пожарной безопасности</Title>
       <Row justify="center">
         <Col span={12}>
-          <Link to={`/${params?.params.id}/quiz`}>Квиз</Link>
+          <Link to={`/courses/${params?.params.id}/quiz`}>Квиз</Link>
         </Col>
       </Row>
     </>
