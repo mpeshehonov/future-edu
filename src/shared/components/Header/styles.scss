@@ -1,0 +1,22 @@
+header.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--brand);
+  color: var(--white);
+  padding: 2vmin 4vmin;
+  height: auto;
+
+  .header__logo, .header__logo a, .header__logo a:hover {
+    color: var(--white);
+    font-weight: bolder;
+    white-space: nowrap;
+    text-transform: uppercase;
+    font-size: x-large;
+  }
+
+  .header__user {
+    align-items: flex-end;
+  }
+}
+
+
