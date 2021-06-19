@@ -16,7 +16,7 @@ const CoursePage = () => {
           <br />
           <Link to={`/courses/${params?.params.id}/quiz`}>Квиз</Link>
           <br />
-          <Link to={`/courses/${params?.params.id}/dnd`}>ДНД</Link>
+          <Link to={`/courses/${params?.params.id}/puzzle`}>Пазл</Link>
           <br />
           <Link to={`/courses/${params?.params.id}/comics`}>Комикс</Link>
           <br />

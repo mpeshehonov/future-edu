@@ -25,11 +25,11 @@ const App = () => {
             <Redirect to="/courses" />
           </Route>
           <Route exact path="/courses" component={CoursesPage} />
-          <Route exact path="/courses/dnd" component={DndPage} />
+          <Route exact path="/courses/puzzle" component={DndPage} />
           <Route exact path="/courses/:id" component={CoursePage} />
           <Route exact path="/courses/:id/info" component={InfoPage} />
           <Route exact path="/courses/:id/quiz" component={QuizPage} />
-          <Route exact path="/courses/:id/dnd" component={FirePuzzlePage} />
+          <Route exact path="/courses/:id/puzzle" component={FirePuzzlePage} />
           <Route exact path="/courses/:id/comics" component={ComicsPage} />
           <Route exact path="/courses/:id/trainer" component={TrainerPage} />
           <Route exact path="/chat" component={ChatPage} />
