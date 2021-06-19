@@ -14,8 +14,18 @@ header.header {
     font-size: x-large;
   }
 
+  .header__search-input {
+    width: 50vmin;
+  }
+
   .header__user {
     align-items: flex-end;
+  }
+
+  .user__badge-icon {
+    color: var(--white);
+    border-radius: 50%;
+    background-color: yellow;
   }
 }
 
