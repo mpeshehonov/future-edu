@@ -17,7 +17,12 @@ const PageLayout: FC = ({children}) => {
             <Button
               type="primary"
               onClick={() => history.goBack()}
-              style={{marginBottom: 16, marginLeft: 16, float: 'right'}}
+              style={{
+                marginBottom: 16,
+                marginLeft: 16,
+                position: 'absolute',
+                right: '5vmin',
+              }}
             >
               <ArrowLeftOutlined />
               Назад
